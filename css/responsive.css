@@ -1,0 +1,211 @@
+@media(max-width:992px){
+
+    .footer-grid{
+    
+    grid-template-columns:1fr 1fr;
+    
+    }
+    
+    .top-bar .container{
+    
+    flex-direction:column;
+    gap:15px;
+    
+    }
+    
+    nav{
+    
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+    
+    }
+    
+    .nav-links{
+    
+    flex-wrap:wrap;
+    justify-content:center;
+    
+    }
+    
+    .hero h1{
+    
+    font-size:45px;
+    
+    }
+    
+    }
+    
+    @media(max-width:768px){
+    
+    .footer-grid{
+    
+    grid-template-columns:1fr;
+    
+    }
+    
+    .top-left{
+    
+    flex-direction:column;
+    gap:10px;
+    
+    }
+    
+    .nav-links{
+    
+    flex-direction:column;
+    align-items:center;
+    
+    }
+    
+    .hero{
+    
+    height:60vh;
+    
+    }
+    
+    .hero h1{
+    
+    font-size:36px;
+    
+    }
+    
+    .hero p{
+    
+    font-size:18px;
+    
+    }
+    
+    }
+
+
+    .welcome-container{
+
+        grid-template-columns:1fr;
+    
+    }
+    
+    .welcome-content{
+    
+        text-align:center;
+    
+    }
+    
+    .welcome-buttons{
+    
+        justify-content:center;
+    
+    }
+
+
+
+    @media(max-width:992px){
+
+        .gallery-grid{
+        
+        grid-template-columns:repeat(2,1fr);
+        
+        }
+        
+        }
+        
+        @media(max-width:600px){
+        
+        .gallery-grid{
+        
+        grid-template-columns:1fr;
+        
+        }
+        
+        .gallery-item img{
+        
+        height:280px;
+        
+        }
+        
+        }
+
+
+        /*==============================
+CTA & NEWSLETTER
+===============================*/
+
+@media(max-width:768px){
+
+    .cta-content h2{
+    
+    font-size:34px;
+    
+    }
+    
+    .newsletter-container{
+    
+    flex-direction:column;
+    text-align:center;
+    
+    }
+    
+    .newsletter-form{
+    
+    width:100%;
+    
+    flex-direction:column;
+    
+    }
+    
+    .newsletter-form input{
+    
+    border-radius:6px;
+    margin-bottom:15px;
+    
+    }
+    
+    .newsletter-form button{
+    
+    border-radius:6px;
+    
+    }
+    
+    }
+
+    @media(max-width:992px){
+
+        .hero-content h1{
+        
+        font-size:52px;
+        
+        }
+        
+        }
+        
+        @media(max-width:768px){
+        
+        .hero{
+        
+        height:80vh;
+        
+        }
+        
+        .hero-content h1{
+        
+        font-size:36px;
+        
+        }
+        
+        .hero-content p{
+        
+        font-size:18px;
+        
+        }
+        
+        .prev,
+        .next{
+        
+        display:none;
+        
+        }
+        
+        }
+
+        
+        
