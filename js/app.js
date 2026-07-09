@@ -49,121 +49,82 @@ const observer = new IntersectionObserver((entries) => {
 counters.forEach(counter => observer.observe(counter));
 
 
-//==============================
-// HERO SLIDER
-//==============================
+/*==============================
+        HERO SLIDER
+==============================*/
 
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
 const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
 
-let current = 0;
+if(slides.length && next && prev){
 
-function showSlide(index){
+    let current = 0;
 
-    slides.forEach(slide => slide.classList.remove("active"));
+    function showSlide(index){
 
-    dots.forEach(dot => dot.classList.remove("active"));
+        slides.forEach(slide=>slide.classList.remove("active"));
 
-    slides[index].classList.add("active");
+        dots.forEach(dot=>dot.classList.remove("active"));
 
-    dots[index].classList.add("active");
+        slides[index].classList.add("active");
 
-}
+        if(dots[index]){
 
-function nextSlide(){
+            dots[index].classList.add("active");
 
-    current++;
-
-    if(current >= slides.length){
-
-        current = 0;
+        }
 
     }
 
-    showSlide(current);
+    function nextSlide(){
 
-}
+        current++;
 
-function prevSlide(){
+        if(current>=slides.length){
 
-    current--;
+            current=0;
 
-    if(current < 0){
-
-        current = slides.length - 1;
-
-    }
-
-    showSlide(current);
-
-}
-
-next.addEventListener("click", nextSlide);
-
-prev.addEventListener("click", prevSlide);
-
-dots.forEach((dot,index)=>{
-
-    dot.addEventListener("click",()=>{
-
-        current=index;
+        }
 
         showSlide(current);
 
-    });
+    }
 
-});
+    function prevSlide(){
 
-setInterval(nextSlide,5000);
+        current--;
 
+        if(current<0){
 
-const header = document.getElementById("header");
+            current=slides.length-1;
 
-window.addEventListener("scroll", function(){
+        }
 
-    if(window.scrollY > 50){
-
-        header.classList.add("sticky");
-
-    }else{
-
-        header.classList.remove("sticky");
+        showSlide(current);
 
     }
 
-});
+    next.addEventListener("click",nextSlide);
 
-const hamburger = document.querySelector(".hamburger");
+    prev.addEventListener("click",prevSlide);
 
-const navLinks = document.querySelector(".nav-links");
+    dots.forEach((dot,index)=>{
 
-hamburger.addEventListener("click", function(){
+        dot.addEventListener("click",()=>{
 
-    navLinks.classList.toggle("active");
+            current=index;
 
-});
+            showSlide(current);
 
-document.querySelectorAll(".nav-links a").forEach(link=>{
-
-    link.addEventListener("click",()=>{
-
-        navLinks.classList.remove("active");
+        });
 
     });
 
-});
+    setInterval(nextSlide,5000);
 
-document.addEventListener("click", function(e){
-
-    if(!navLinks.contains(e.target) && !hamburger.contains(e.target)){
-
-        navLinks.classList.remove("active");
-
-    }
-
-});
+}
 
 
 /*=================================
@@ -214,5 +175,230 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     });
+
+});
+
+
+/*=================================
+        CONTACT FAQ
+==================================*/
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+
+    const button = item.querySelector(".faq-question");
+
+    button.addEventListener("click", () => {
+
+        faqItems.forEach(faq => {
+
+            if(faq !== item){
+
+                faq.classList.remove("active");
+
+            }
+
+        });
+
+        item.classList.toggle("active");
+
+    });
+
+});
+
+/*=================================
+        COPY ACCOUNT NUMBER
+==================================*/
+
+const copyButton = document.querySelector(".copy-account-btn");
+
+if(copyButton){
+
+    copyButton.addEventListener("click", () => {
+
+        navigator.clipboard.writeText("0123456789");
+
+        copyButton.innerHTML = '<i class="fas fa-check"></i> Account Number Copied';
+
+        setTimeout(() => {
+
+            copyButton.innerHTML = '<i class="fas fa-copy"></i> Copy Account Number';
+
+        }, 2000);
+
+    });
+
+}
+
+/*=================================
+        PRELOADER
+==================================*/
+
+window.addEventListener("load", () => {
+
+    const preloader = document.getElementById("preloader");
+
+    if(preloader){
+
+        preloader.classList.add("hide");
+
+    }
+
+});
+
+/*=================================
+        SCROLL PROGRESS
+==================================*/
+
+const progressBar = document.getElementById("scroll-progress");
+
+if(progressBar){
+
+    window.addEventListener("scroll", () => {
+
+        const scrollTop = document.documentElement.scrollTop;
+
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+        const progress = (scrollTop / scrollHeight) * 100;
+
+        progressBar.style.width = progress + "%";
+
+    });
+
+}
+
+/*=================================
+        BACK TO TOP
+==================================*/
+
+const backToTop = document.getElementById("backToTop");
+
+if(backToTop){
+
+    window.addEventListener("scroll", () => {
+
+        if(window.scrollY > 300){
+
+            backToTop.classList.add("show");
+
+        }else{
+
+            backToTop.classList.remove("show");
+
+        }
+
+    });
+
+    backToTop.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top:0,
+
+            behavior:"smooth"
+
+        });
+
+    });
+
+}
+
+/*=================================
+        SCROLL REVEAL
+==================================*/
+
+const reveals = document.querySelectorAll(".reveal");
+
+if(reveals.length){
+
+    const revealObserver = new IntersectionObserver((entries)=>{
+
+        entries.forEach(entry=>{
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("active");
+
+            }
+
+        });
+
+    },{
+
+        threshold:0.15
+
+    });
+
+    reveals.forEach(section=>{
+
+        revealObserver.observe(section);
+
+    });
+
+}
+
+/*=================================
+        STAGGERED CARDS
+==================================*/
+
+const revealCards = document.querySelectorAll(".reveal-card");
+
+if(revealCards.length){
+
+    const cardObserver = new IntersectionObserver((entries)=>{
+
+        entries.forEach(entry=>{
+
+            if(entry.isIntersecting){
+
+                const cards = entry.target.parentElement.children;
+
+                [...cards].forEach((card,index)=>{
+
+                    setTimeout(()=>{
+
+                        card.classList.add("show");
+
+                    },index*100);
+
+                });
+
+            }
+
+        });
+
+    },{
+
+        threshold:.2
+
+    });
+
+    revealCards.forEach(card=>{
+
+        cardObserver.observe(card);
+
+    });
+
+}
+
+/*=================================
+        ACTIVE NAVIGATION
+==================================*/
+
+const currentPage = window.location.pathname.split("/").pop();
+
+const navItems = document.querySelectorAll(".nav-link");
+
+navItems.forEach(link=>{
+
+    const href = link.getAttribute("href");
+
+    if(href === currentPage){
+
+        link.classList.add("active");
+
+    }
 
 });

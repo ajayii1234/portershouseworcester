@@ -23,6 +23,28 @@
 
 <body>
 
+    <!--===============================
+        PRELOADER
+================================-->
+
+<div id="preloader">
+
+    <div class="loader">
+
+        <i class="fas fa-church"></i>
+
+        <h2>Porters House</h2>
+
+    </div>
+
+</div>
+
+<!--=================================
+    SCROLL PROGRESS BAR
+==================================-->
+
+<div id="scroll-progress"></div>
+
     <!--========================
         TOP BAR
     =========================-->
@@ -51,6 +73,8 @@
 
                 <a href="#"><i class="fab fa-x-twitter"></i></a>
 
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
             </div>
 
         </div>
@@ -69,7 +93,7 @@
 
                 <a href="index.html" class="logo">
 
-                    <i class="fas fa-church"></i>
+                    <i class="fas fa-church float"></i>
                 
                     <div class="logo-text">
                 
@@ -83,13 +107,13 @@
 
                 <ul class="nav-links">
 
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" class="active nav-link">Home</a></li>
 
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
 
                                     <!-- Dropdown -->
 
-                                    <li class="dropdown">
+                                    <!-- <li class="dropdown">
 
                                         <a href="#">
                                     
@@ -115,19 +139,21 @@
                                     
                                         </ul>
                                     
-                                    </li>
+                                    </li> -->
 
-                    <li><a href="sermons.html">Sermons</a></li>
+                                    <li><a href="ministries.html" class="nav-link">Ministries</a></li>
 
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="sermons.html" class="nav-link">Sermons</a></li>
 
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
 
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
 
-                    <li><a href="pastors.html">Leadership</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
 
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="pastors.html" class="nav-link">Leadership</a></li>
+
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
 
                     <li><a href="donate.html" class="donate-btn">Donate</a></li>
 
@@ -135,7 +161,7 @@
 
                 <div class="hamburger">
 
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars float"></i>
                 
                 </div>
 
@@ -150,7 +176,7 @@
     SERMONS HERO
 ==================================-->
 
-<section class="sermons-hero">
+<section class="sermons-hero reveal">
 
     <div class="hero-overlay"></div>
 
@@ -175,7 +201,7 @@
     FEATURED SERMON
 ==================================-->
 
-<section class="featured-sermon">
+<section class="featured-sermon reveal">
 
     <div class="container">
 
@@ -301,7 +327,7 @@
     LATEST SERMONS
 ==================================-->
 
-<section class="latest-sermons">
+<section class="latest-sermons reveal">
 
     <div class="container">
 
@@ -435,7 +461,7 @@
     SERMON CATEGORIES
 ==================================-->
 
-<section class="sermon-categories">
+<section class="sermon-categories reveal">
 
     <div class="container">
 
@@ -524,7 +550,7 @@
     WATCH & LISTEN
 ==================================-->
 
-<section class="watch-live">
+<section class="watch-live reveal">
 
     <div class="container">
 
@@ -607,7 +633,7 @@
     SERMON NEWSLETTER
 ==================================-->
 
-<section class="sermon-newsletter">
+<section class="sermon-newsletter reveal">
 
     <div class="newsletter-overlay"></div>
 
@@ -731,6 +757,16 @@
         </div>
 
     </footer>
+
+    <!--=================================
+    BACK TO TOP
+==================================-->
+
+<button id="backToTop">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
 
     <script src="js/app.js"></script>
 

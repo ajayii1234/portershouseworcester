@@ -23,6 +23,28 @@
 
 <body>
 
+    <!--===============================
+        PRELOADER
+================================-->
+
+<div id="preloader">
+
+    <div class="loader">
+
+        <i class="fas fa-church"></i>
+
+        <h2>Porters House</h2>
+
+    </div>
+
+</div>
+
+<!--=================================
+    SCROLL PROGRESS BAR
+==================================-->
+
+<div id="scroll-progress"></div>
+
     <!--========================
         TOP BAR
     =========================-->
@@ -51,6 +73,8 @@
 
                 <a href="#"><i class="fab fa-x-twitter"></i></a>
 
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
             </div>
 
         </div>
@@ -69,7 +93,7 @@
 
                 <a href="index.html" class="logo">
 
-                    <i class="fas fa-church"></i>
+                    <i class="fas fa-church float"></i>
                 
                     <div class="logo-text">
                 
@@ -83,13 +107,13 @@
 
                 <ul class="nav-links">
 
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" class="active nav-link">Home</a></li>
 
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
 
                                     <!-- Dropdown -->
 
-                                    <li class="dropdown">
+                                    <!-- <li class="dropdown">
 
                                         <a href="#">
                                     
@@ -115,19 +139,21 @@
                                     
                                         </ul>
                                     
-                                    </li>
+                                    </li> -->
 
-                    <li><a href="sermons.html">Sermons</a></li>
+                                    <li><a href="ministries.html" class="nav-link">Ministries</a></li>
 
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="sermons.html" class="nav-link">Sermons</a></li>
 
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
 
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
 
-                    <li><a href="pastors.html">Leadership</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
 
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="pastors.html" class="nav-link">Leadership</a></li>
+
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
 
                     <li><a href="donate.html" class="donate-btn">Donate</a></li>
 
@@ -135,7 +161,7 @@
 
                 <div class="hamburger">
 
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars float"></i>
                 
                 </div>
 
@@ -145,71 +171,353 @@
 
     </header>
 
+<!--=================================
+    LEADERSHIP HERO
+==================================-->
 
-<!-- ==========================
-     CHURCH STATISTICS
-=========================== -->
+<section class="leadership-hero reveal">
 
-<section class="statistics">
+    <div class="hero-overlay"></div>
 
-    <div class="statistics-overlay">
+    <div class="container">
 
-        <div class="container">
+        <div class="hero-content">
 
-            <div class="section-header light">
+            <h1>Our Leadership</h1>
 
-                <span class="section-tag">Our Impact</span>
+            <p>
 
-                <h2>Making a Difference Through Christ</h2>
+                Meet the dedicated men and women who faithfully serve,
+                shepherd and lead our church with integrity, wisdom
+                and a passion for God's people.
 
-                <p>
+            </p>
 
-                    Every number represents a life touched, a family restored,
-                    and a community transformed by God's love.
+        </div>
 
-                </p>
+    </div>
+
+</section>
+
+<!--=================================
+    SENIOR PASTOR
+==================================-->
+
+<section class="senior-pastor reveal">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Senior Pastor
+
+            </span>
+
+            <h2>
+
+                Meet Our Lead Pastor
+
+            </h2>
+
+            <p>
+
+                Passionately serving God and people through biblical teaching,
+                visionary leadership, and compassionate pastoral care.
+
+            </p>
+
+        </div>
+
+        <div class="pastor-grid">
+
+            <!-- Pastor Image -->
+
+            <div class="pastor-image">
+
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+                     alt="Senior Pastor">
 
             </div>
 
-            <div class="stats-grid">
+            <!-- Pastor Details -->
 
-                <div class="stat-card">
+            <div class="pastor-content">
 
-                    <i class="fa-solid fa-users"></i>
+                <span class="pastor-title">
 
-                    <h3 class="counter" data-target="5000"></h3>
+                    Senior Pastor
 
-                    <p>Church Members</p>
+                </span>
+
+                <h2>
+
+                    Pastor John Anderson
+
+                </h2>
+
+                <p>
+
+                    Pastor John has faithfully served in ministry for over
+                    twenty years, passionately preaching God's Word and
+                    equipping believers to live purposeful Christian lives.
+                    His vision is to see lives transformed through the love,
+                    grace and power of Jesus Christ.
+
+                </p>
+
+                <p>
+
+                    Together with his wife, he continues to mentor leaders,
+                    strengthen families, and inspire people to fulfill their
+                    God-given purpose.
+
+                </p>
+
+                <div class="pastor-info">
+
+                    <div>
+
+                        <i class="fas fa-calendar"></i>
+
+                        <span>
+
+                            22 Years in Ministry
+
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fas fa-book-bible"></i>
+
+                        <span>
+
+                            Bible Teacher & Mentor
+
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fas fa-envelope"></i>
+
+                        <span>
+
+                            pastor@portershouse.org
+
+                        </span>
+
+                    </div>
 
                 </div>
 
-                <div class="stat-card">
+                <div class="pastor-social">
 
-                    <i class="fa-solid fa-book-bible"></i>
+                    <a href="#">
 
-                    <h3 class="counter" data-target="850"></h3>
+                        <i class="fab fa-facebook-f"></i>
 
-                    <p>Sermons Preached</p>
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-youtube"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-x-twitter"></i>
+
+                    </a>
 
                 </div>
 
-                <div class="stat-card">
+                <a href="contact.html" class="pastor-btn">
 
-                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    Contact Pastor
 
-                    <h3 class="counter" data-target="40"></h3>
+                </a>
 
-                    <p>Community Outreach Programs</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=================================
+    PASTORAL TEAM
+==================================-->
+
+<section class="pastoral-team reveal">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Our Team
+
+            </span>
+
+            <h2>
+
+                Meet Our Pastoral Team
+
+            </h2>
+
+            <p>
+
+                Our pastors are committed to shepherding the church,
+                equipping believers, and serving our community with
+                excellence and compassion.
+
+            </p>
+
+        </div>
+
+        <div class="team-grid">
+
+            <!-- Pastor -->
+
+            <div class="team-card">
+
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80" alt="Associate Pastor">
+
+                <div class="team-content">
+
+                    <h3>Pastor Michael James</h3>
+
+                    <span>Associate Pastor</span>
+
+                    <p>
+
+                        Supporting church vision through teaching,
+                        discipleship and pastoral care.
+
+                    </p>
+
+                    <div class="team-social">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    </div>
 
                 </div>
 
-                <div class="stat-card">
+            </div>
 
-                    <i class="fa-solid fa-globe"></i>
+            <!-- Pastor -->
 
-                    <h3 class="counter" data-target="22"></h3>
+            <div class="team-card">
 
-                    <p>Mission Fields</p>
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="Worship Pastor">
+
+                <div class="team-content">
+
+                    <h3>Pastor Daniel Smith</h3>
+
+                    <span>Worship Pastor</span>
+
+                    <p>
+
+                        Leading the church into God's presence through
+                        worship, music and creative arts.
+
+                    </p>
+
+                    <div class="team-social">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Pastor -->
+
+            <div class="team-card">
+
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=80" alt="Children Pastor">
+
+                <div class="team-content">
+
+                    <h3>Pastor Grace Wilson</h3>
+
+                    <span>Children's Pastor</span>
+
+                    <p>
+
+                        Helping children discover Jesus through engaging
+                        Bible teaching and fun activities.
+
+                    </p>
+
+                    <div class="team-social">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Pastor -->
+
+            <div class="team-card">
+
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=80" alt="Youth Pastor">
+
+                <div class="team-content">
+
+                    <h3>Pastor Sarah Johnson</h3>
+
+                    <span>Youth Pastor</span>
+
+                    <p>
+
+                        Raising the next generation of Christ-centered
+                        leaders through mentorship and discipleship.
+
+                    </p>
+
+                    <div class="team-social">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                    </div>
 
                 </div>
 
@@ -221,6 +529,365 @@
 
 </section>
 
+<!--=================================
+    MINISTRY LEADERS
+==================================-->
+
+<section class="ministry-leaders reveal">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Ministry Leadership
+
+            </span>
+
+            <h2>
+
+                Leaders Serving With Excellence
+
+            </h2>
+
+            <p>
+
+                Our ministry leaders faithfully oversee different departments,
+                helping people discover their gifts and serve God with passion.
+
+            </p>
+
+        </div>
+
+        <div class="leaders-grid">
+
+            <div class="leader-card">
+
+                <i class="fas fa-music"></i>
+
+                <h3>Worship Ministry</h3>
+
+                <h4>David Johnson</h4>
+
+                <p>
+
+                    Leads the worship team in creating an atmosphere where
+                    people can encounter God's presence.
+
+                </p>
+
+            </div>
+
+            <div class="leader-card">
+
+                <i class="fas fa-video"></i>
+
+                <h3>Media Ministry</h3>
+
+                <h4>Sarah Williams</h4>
+
+                <p>
+
+                    Oversees audio, video, photography, live streaming and
+                    digital communication.
+
+                </p>
+
+            </div>
+
+            <div class="leader-card">
+
+                <i class="fas fa-handshake"></i>
+
+                <h3>Ushering Team</h3>
+
+                <h4>Michael Brown</h4>
+
+                <p>
+
+                    Coordinates hospitality and ensures every guest receives
+                    a warm welcome.
+
+                </p>
+
+            </div>
+
+            <div class="leader-card">
+
+                <i class="fas fa-child"></i>
+
+                <h3>Children's Ministry</h3>
+
+                <h4>Grace Anderson</h4>
+
+                <p>
+
+                    Provides biblical teaching and engaging activities for
+                    children of all ages.
+
+                </p>
+
+            </div>
+
+            <div class="leader-card">
+
+                <i class="fas fa-hands-praying"></i>
+
+                <h3>Prayer Ministry</h3>
+
+                <h4>Daniel Wilson</h4>
+
+                <p>
+
+                    Coordinates church prayer meetings, intercession and
+                    spiritual support.
+
+                </p>
+
+            </div>
+
+            <div class="leader-card">
+
+                <i class="fas fa-bullhorn"></i>
+
+                <h3>Evangelism</h3>
+
+                <h4>Rebecca James</h4>
+
+                <p>
+
+                    Leads outreach initiatives and community evangelism
+                    projects throughout the city.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=================================
+    BOARD OF ELDERS
+==================================-->
+
+<section class="elders-section reveal">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Spiritual Oversight
+
+            </span>
+
+            <h2>
+
+                Board of Elders & Deacons
+
+            </h2>
+
+            <p>
+
+                Our elders and deacons faithfully support the vision of the
+                church through spiritual guidance, accountability, wisdom,
+                and servant leadership.
+
+            </p>
+
+        </div>
+
+        <div class="elders-grid">
+
+            <!-- Elder -->
+
+            <div class="elder-card">
+
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80"
+                     alt="Elder">
+
+                <div class="elder-content">
+
+                    <h3>
+
+                        Elder Samuel Johnson
+
+                    </h3>
+
+                    <span>
+
+                        Board Chairman
+
+                    </span>
+
+                    <p>
+
+                        Providing spiritual leadership, vision,
+                        accountability and biblical counsel.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Elder -->
+
+            <div class="elder-card">
+
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80"
+                     alt="Elder">
+
+                <div class="elder-content">
+
+                    <h3>
+
+                        Elder Michael Adams
+
+                    </h3>
+
+                    <span>
+
+                        Elder
+
+                    </span>
+
+                    <p>
+
+                        Supporting church growth through mentorship,
+                        prayer and discipleship.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Deacon -->
+
+            <div class="elder-card">
+
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=80"
+                     alt="Deacon">
+
+                <div class="elder-content">
+
+                    <h3>
+
+                        Deacon Grace Williams
+
+                    </h3>
+
+                    <span>
+
+                        Church Administrator
+
+                    </span>
+
+                    <p>
+
+                        Serving the congregation by coordinating church
+                        administration and member care.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=================================
+    MEET WITH A PASTOR
+==================================-->
+
+<section class="leadership-cta reveal">
+
+    <div class="leadership-cta-overlay"></div>
+
+    <div class="container">
+
+        <div class="leadership-cta-content">
+
+            <span class="section-tag">
+
+                We're Here For You
+
+            </span>
+
+            <h2>
+
+                Need Prayer, Counseling or Spiritual Guidance?
+
+            </h2>
+
+            <p>
+
+                Our pastors would be honored to pray with you, provide biblical
+                counsel, and support you through every season of life. Whether
+                you're facing challenges, celebrating victories, or seeking
+                direction, we're here to walk alongside you.
+
+            </p>
+
+            <div class="cta-services">
+
+                <div class="cta-service">
+
+                    <i class="fas fa-hands-praying"></i>
+
+                    <span>Prayer Request</span>
+
+                </div>
+
+                <div class="cta-service">
+
+                    <i class="fas fa-comments"></i>
+
+                    <span>Pastoral Counseling</span>
+
+                </div>
+
+                <div class="cta-service">
+
+                    <i class="fas fa-calendar-check"></i>
+
+                    <span>Book an Appointment</span>
+
+                </div>
+
+            </div>
+
+            <div class="leadership-buttons">
+
+                <a href="contact.html" class="leadership-btn-primary">
+
+                    Book a Meeting
+
+                </a>
+
+                <a href="contact.html" class="leadership-btn-outline">
+
+                    Request Prayer
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!--========================
         FOOTER
@@ -295,6 +962,16 @@
         </div>
 
     </footer>
+
+    <!--=================================
+    BACK TO TOP
+==================================-->
+
+<button id="backToTop">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
 
     <script src="js/app.js"></script>
 
