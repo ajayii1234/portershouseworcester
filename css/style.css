@@ -4461,7 +4461,7 @@ nav{
 
     gap:12px;
 
-    color: black !important;
+    color: #222 !important;
 
 }
 
@@ -6614,6 +6614,8 @@ nav{
     align-items:center;
 
     gap:15px;
+
+    color: #222 !important;
 
 }
 
