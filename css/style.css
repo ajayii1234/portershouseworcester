@@ -4461,6 +4461,8 @@ nav{
 
     gap:12px;
 
+    color: black !important;
+
 }
 
 .event-info i{
