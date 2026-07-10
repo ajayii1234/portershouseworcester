@@ -10777,7 +10777,7 @@ html{
         height:58px;
 
         right:18px;
-        bottom:105px;;
+        bottom:105px !important;
 
         font-size:30px;
     }
