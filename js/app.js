@@ -416,4 +416,120 @@ hamburger.addEventListener("click", function(){
 
 });
 
+/*=================================
+        GALLERY LIGHTBOX
+==================================*/
+
+const galleryImages = document.querySelectorAll(".gallery-image");
+
+const lightbox = document.getElementById("lightbox");
+
+const lightboxImage = document.getElementById("lightboxImage");
+
+const closeLightbox = document.getElementById("closeLightbox");
+
+const prevImage = document.getElementById("prevImage");
+
+const nextImage = document.getElementById("nextImage");
+
+if(galleryImages.length && lightbox){
+
+    let currentImage = 0;
+
+    function showImage(index){
+
+        lightboxImage.src = galleryImages[index].currentSrc || galleryImages[index].src;
+
+    }
+
+    galleryImages.forEach((image,index)=>{
+
+        image.addEventListener("click",()=>{
+
+            currentImage = index;
+
+            showImage(currentImage);
+
+            lightbox.classList.add("show");
+
+            document.body.style.overflow = "hidden";
+
+        });
+
+    });
+
+    closeLightbox.addEventListener("click",()=>{
+
+        lightbox.classList.remove("show");
+
+        document.body.style.overflow = "";
+
+    });
+
+    nextImage.addEventListener("click",()=>{
+
+        currentImage++;
+
+        if(currentImage >= galleryImages.length){
+
+            currentImage = 0;
+
+        }
+
+        showImage(currentImage);
+
+    });
+
+    prevImage.addEventListener("click",()=>{
+
+        currentImage--;
+
+        if(currentImage < 0){
+
+            currentImage = galleryImages.length - 1;
+
+        }
+
+        showImage(currentImage);
+
+    });
+
+    lightbox.addEventListener("click",(e)=>{
+
+        if(e.target === lightbox){
+
+            lightbox.classList.remove("show");
+
+            document.body.style.overflow = "";
+
+        }
+
+    });
+
+}
+
+/*=================================
+        IMAGE LOADING
+==================================*/
+
+const images = document.querySelectorAll(".gallery-image");
+
+images.forEach(image=>{
+
+    if(image.complete){
+
+        image.classList.add("loaded");
+
+    }else{
+
+        image.addEventListener("load",()=>{
+
+            image.classList.add("loaded");
+
+        });
+
+    }
+
+});
+
 
