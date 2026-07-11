@@ -179,7 +179,7 @@ LOGO
 
     align-items:center;
 
-    gap:15px;
+    gap:6px;
 
     text-decoration:none;
 
@@ -10783,3 +10783,70 @@ html{
     }
 
 }
+
+/* Church Logo Image */
+
+.logo-icon{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+
+    margin-right: 12px;
+
+    transition: all .3s ease;
+
+}
+
+/* Same hover effect as before */
+
+.logo:hover .logo-icon{
+    transform: scale(1.08);
+}
+
+/* Logo Text */
+
+.logo-text h2{
+    font-size: 1.35rem;   /* Adjust between 1.2rem - 1.5rem */
+    margin: 0;
+    line-height: 1.2;
+}
+
+.logo-text span{
+    font-size: 0.75rem;   /* Adjust between 0.7rem - 0.85rem */
+    color: #777;
+    display: block;
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+}
+
+.logo-icon{
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-right: 6px;
+
+    animation: spinLogo 10s linear infinite;
+}
+
+@keyframes spinLogo{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.logo:hover .logo-icon{
+    animation-play-state: paused;
+}
+
+.ministries-btn{
+    color: #0056d6 !important;
+    font-weight: 700;
+}
+
+.ministries-btn:hover{
+    color: #003ea8 !important;
+}
+
